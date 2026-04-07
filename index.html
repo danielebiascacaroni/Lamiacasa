@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Lamiacasa.ch – Gestione immobiliare professionale in Ticino. Appartamenti in affitto, area inquilini e servizi personalizzati." />
+  <meta name="theme-color" content="#124d66" />
+  <title>Lamiacasa.ch – La Tua Casa in Ticino</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════
+     TOP BAR
+══════════════════════════════════════════ -->
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-info">
+      <span><i class="fas fa-phone"></i> <a href="tel:+41XXXXXXXXX">+41 XX XXX XX XX</a></span>
+      <span><i class="fas fa-envelope"></i> <a href="mailto:info@lamiacasa.ch">info@lamiacasa.ch</a></span>
+      <span><i class="fas fa-clock"></i> Lun–Ven 08:30–12:00 / 13:30–17:30</span>
+    </div>
+    <div class="topbar-social">
+      <a href="https://www.facebook.com/lamiacasa.ch" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      &nbsp;
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     NAVBAR
+══════════════════════════════════════════ -->
+<header class="navbar" role="banner">
+  <div class="container navbar-inner">
+
+    <!-- Logo -->
+    <a href="#" class="logo" aria-label="Lamiacasa.ch – Home">
+      <div class="logo-icon" aria-hidden="true"><i class="fas fa-home"></i></div>
+      Lamia<span>casa</span>.ch
+    </a>
+
+    <!-- Desktop nav -->
+    <nav class="nav-links" role="navigation" aria-label="Navigazione principale">
+      <a href="#appartamenti">Appartamenti</a>
+      <a href="#servizi">Servizi</a>
+      <a href="#area-inquilini">Area Inquilini</a>
+      <a href="#chi-siamo">Chi Siamo</a>
+      <a href="#contatti">Contatti</a>
+    </nav>
+
+    <!-- CTA -->
+    <div class="nav-cta">
+      <a href="#area-inquilini" class="btn btn-primary-dk">
+        <i class="fas fa-lock"></i> Accedi
+      </a>
+    </div>
+
+    <!-- Hamburger (mobile) -->
+    <button class="hamburger" aria-label="Apri menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+  </div>
+</header>
+
+<!-- ══════════════════════════════════════════
+     HERO
+══════════════════════════════════════════ -->
+<section class="hero" aria-label="Benvenuti">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-shapes" aria-hidden="true"></div>
+  <div class="container">
+    <div class="hero-content">
+
+      <!-- Text -->
+      <div class="hero-text fade-in">
+        <div class="hero-eyebrow">
+          <i class="fas fa-map-marker-alt"></i> Gestione immobiliare – Ticino, Svizzera
+        </div>
+        <h1>La tua casa,<br /><em>la nostra cura</em></h1>
+        <p class="hero-desc">
+          Affidati a Lamiacasa.ch per trovare il tuo appartamento ideale o per gestire
+          al meglio la tua locazione in Ticino. Professionalità, trasparenza e un servizio
+          su misura per te.
+        </p>
+        <div class="hero-actions">
+          <a href="#appartamenti" class="btn btn-primary">
+            <i class="fas fa-search"></i> Cerca appartamento
+          </a>
+          <a href="#area-inquilini" class="btn btn-outline">
+            <i class="fas fa-user"></i> Area riservata
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <strong>200+</strong>
+            <span>Appartamenti gestiti</span>
+          </div>
+          <div class="hero-stat">
+            <strong>15+</strong>
+            <span>Anni di esperienza</span>
+          </div>
+          <div class="hero-stat">
+            <strong>98%</strong>
+            <span>Inquilini soddisfatti</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Visual cards -->
+      <div class="hero-visual" aria-hidden="true">
+        <div class="apt-card-hero">
+          <div class="apt-thumb apt-thumb-1">
+            <i class="fas fa-building"></i>
+            <span class="apt-thumb-badge">Disponibile</span>
+          </div>
+          <div class="apt-info">
+            <h4>Appartamento 3.5 locali – Lugano</h4>
+            <div class="apt-info-row">
+              <span><i class="fas fa-expand-arrows-alt"></i> 85 m²</span>
+              <span><i class="fas fa-bed"></i> 2 camere</span>
+              <span><i class="fas fa-parking"></i> Box auto</span>
+            </div>
+            <div class="apt-price">CHF 1'850 / mese</div>
+          </div>
+        </div>
+        <div class="apt-card-hero">
+          <div class="apt-thumb apt-thumb-2">
+            <i class="fas fa-home"></i>
+            <span class="apt-thumb-badge">Nuovo</span>
+          </div>
+          <div class="apt-info">
+            <h4>Appartamento 4.5 locali – Bellinzona</h4>
+            <div class="apt-info-row">
+              <span><i class="fas fa-expand-arrows-alt"></i> 110 m²</span>
+              <span><i class="fas fa-bed"></i> 3 camere</span>
+              <span><i class="fas fa-sun"></i> Terrazza</span>
+            </div>
+            <div class="apt-price">CHF 2'200 / mese</div>
+          </div>
+        </div>
+        <div class="floating-badge">
+          <strong>12</strong>
+          <span>Apt. liberi ora</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     QUICK SEARCH
+══════════════════════════════════════════ -->
+<div class="search-section">
+  <div class="container">
+    <form class="search-bar" role="search" aria-label="Cerca appartamenti" onsubmit="event.preventDefault(); document.getElementById('appartamenti').scrollIntoView({behavior:'smooth'});">
+      <i class="fas fa-search" style="color:var(--grey);" aria-hidden="true"></i>
+      <input type="text" placeholder="Comune, quartiere, indirizzo…" aria-label="Cerca per posizione" />
+      <select aria-label="Numero locali">
+        <option value="">Locali</option>
+        <option>1.5</option>
+        <option>2.5</option>
+        <option>3.5</option>
+        <option>4.5</option>
+        <option>5.5+</option>
+      </select>
+      <select aria-label="Prezzo massimo">
+        <option value="">Affitto max</option>
+        <option>CHF 1'000</option>
+        <option>CHF 1'500</option>
+        <option>CHF 2'000</option>
+        <option>CHF 2'500</option>
+        <option>CHF 3'000+</option>
+      </select>
+      <button type="submit" class="btn btn-primary">
+        <i class="fas fa-search"></i> Cerca
+      </button>
+    </form>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     SERVICES
+══════════════════════════════════════════ -->
+<section class="services-section" id="servizi" aria-labelledby="servizi-title">
+  <div class="container">
+    <div class="section-header">
+      <span class="badge">I Nostri Servizi</span>
+      <h2 class="section-title" id="servizi-title">Tutto ciò di cui hai bisogno,<br />in un unico posto</h2>
+      <p class="section-sub">Servizi digitali semplici e veloci per inquilini, futuri inquilini e proprietari.</p>
+    </div>
+
+    <div class="services-grid">
+
+      <!-- Per inquilini -->
+      <article class="service-card" tabindex="0" aria-label="Segnalazione guasti">
+        <div class="service-icon icon-red"><i class="fas fa-tools" aria-hidden="true"></i></div>
+        <h3>Segnalazione Guasti</h3>
+        <p>Segnala rapidamente un guasto o un problema nel tuo appartamento. Seguiamo ogni richiesta di intervento con prontezza.</p>
+        <a href="#area-inquilini" class="service-arrow">Segnala ora <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+      </article>
+
+      <article class="service-card" tabindex="0" aria-label="Disdetta del contratto">
+        <div class="service-icon icon-purple"><i class="fas fa-file-contract" aria-hidden="true"></i></div>
+        <h3>Disdetta Contratto</h3>
+        <p>Invia la disdetta del contratto d'affitto in modo semplice e conforme alle normative svizzere, con tutte le istruzioni necessarie.</p>
+        <a href="#area-inquilini" class="service-arrow">Vai all'area riservata <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+      </article>
+
+      <article class="service-card" tabindex="0" aria-label="Ricerca subentrante">
+        <div class="service-icon icon-green"><i class="fas fa-user-friends" aria-hidden="true"></i></div>
+        <h3>Ricerca Subentrante</h3>
+        <p>Hai bisogno di lasciare prima del termine? Ti aiutiamo a trovare un subentrante adatto, velocemente e nel rispetto del contratto.</p>
+        <a href="#area-inquilini" class="service-arrow">Richiedi info <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+      </article>
+
+      <article class="service-card" tabindex="0" aria-label="Appartamenti disponibili">
+        <div class="service-icon icon-blue"><i class="fas fa-building" aria-hidden="true"></i></div>
+        <h3>Appartamenti Disponibili</h3>
+        <p>Sfoglia il nostro catalogo di appartamenti liberi in Ticino, con foto, planimetrie e tutte le informazioni utili.</p>
+        <a href="#appartamenti" class="service-arrow">Vedi appartamenti <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+      </article>
+
+      <article class="service-card" tabindex="0" aria-label="Domanda di locazione">
+        <div class="service-icon icon-amber"><i class="fas fa-pencil-alt" aria-hidden="true"></i></div>
+        <h3>Domanda di Locazione</h3>
+        <p>Compila online la domanda di locazione per l'appartamento che ti interessa. Risposta rapida e processo trasparente.</p>
+        <a href="#contatti" class="service-arrow">Compila la domanda <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+      </article>
+
+      <article class="service-card" tabindex="0" aria-label="Gestione proprietari">
+        <div class="service-icon icon-teal"><i class="fas fa-key" aria-hidden="true"></i></div>
+        <h3>Area Proprietari</h3>
+        <p>Sei un proprietario? Affidaci la gestione del tuo immobile: affitti, manutenzioni, rendicontazioni e molto altro.</p>
+        <a href="#contatti" class="service-arrow">Contattaci <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     APARTMENTS
+══════════════════════════════════════════ -->
+<section class="apartments-section" id="appartamenti" aria-labelledby="apt-title">
+  <div class="container">
+
+    <div class="apartments-header">
+      <div>
+        <span class="badge">Disponibili Ora</span>
+        <h2 class="section-title" id="apt-title">Appartamenti in affitto</h2>
+        <p class="section-sub">Trova il tuo prossimo appartamento in Ticino.</p>
+      </div>
+      <div class="filter-pills" role="group" aria-label="Filtra per tipo">
+        <button class="pill active" data-filter="tutti">Tutti</button>
+        <button class="pill" data-filter="monolocale">Monolocale</button>
+        <button class="pill" data-filter="2-3-locali">2–3 locali</button>
+        <button class="pill" data-filter="4-locali">4+ locali</button>
+        <button class="pill" data-filter="arredato">Arredato</button>
+      </div>
+    </div>
+
+    <div class="apartments-grid">
+
+      <!-- Card 1 -->
+      <article class="apt-card" data-type="2-3-locali">
+        <div class="apt-card-img apt-card-img-1">
+          <i class="fas fa-building" aria-hidden="true"></i>
+          <span class="apt-tag">Disponibile</span>
+          <button class="apt-wishlist" aria-label="Aggiungi ai preferiti"><i class="far fa-heart"></i></button>
+        </div>
+        <div class="apt-card-body">
+          <p class="apt-location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Lugano, Via Nassa</p>
+          <h3 class="apt-card-title">Appartamento 3.5 locali luminoso</h3>
+          <div class="apt-features">
+            <span><i class="fas fa-expand-arrows-alt" aria-hidden="true"></i> 85 m²</span>
+            <span><i class="fas fa-bed" aria-hidden="true"></i> 2 camere</span>
+            <span><i class="fas fa-bath" aria-hidden="true"></i> 1 bagno</span>
+          </div>
+          <div class="apt-card-footer">
+            <div>
+              <div class="apt-price-label">Affitto mensile</div>
+              <div class="apt-price-amount">CHF 1'850 <span class="apt-price-period">/ mese</span></div>
+            </div>
+            <a href="#contatti" class="btn btn-primary-dk" style="padding:.5rem 1rem;font-size:.82rem;">Dettagli</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="apt-card" data-type="4-locali">
+        <div class="apt-card-img apt-card-img-2">
+          <i class="fas fa-home" aria-hidden="true"></i>
+          <span class="apt-tag new">Nuovo</span>
+          <button class="apt-wishlist" aria-label="Aggiungi ai preferiti"><i class="far fa-heart"></i></button>
+        </div>
+        <div class="apt-card-body">
+          <p class="apt-location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Bellinzona, Viale Stazione</p>
+          <h3 class="apt-card-title">Appartamento 4.5 locali con terrazza</h3>
+          <div class="apt-features">
+            <span><i class="fas fa-expand-arrows-alt" aria-hidden="true"></i> 110 m²</span>
+            <span><i class="fas fa-bed" aria-hidden="true"></i> 3 camere</span>
+            <span><i class="fas fa-sun" aria-hidden="true"></i> Terrazza</span>
+          </div>
+          <div class="apt-card-footer">
+            <div>
+              <div class="apt-price-label">Affitto mensile</div>
+              <div class="apt-price-amount">CHF 2'200 <span class="apt-price-period">/ mese</span></div>
+            </div>
+            <a href="#contatti" class="btn btn-primary-dk" style="padding:.5rem 1rem;font-size:.82rem;">Dettagli</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="apt-card" data-type="monolocale">
+        <div class="apt-card-img apt-card-img-3">
+          <i class="fas fa-couch" aria-hidden="true"></i>
+          <span class="apt-tag">Disponibile</span>
+          <button class="apt-wishlist" aria-label="Aggiungi ai preferiti"><i class="far fa-heart"></i></button>
+        </div>
+        <div class="apt-card-body">
+          <p class="apt-location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Locarno, Lungolago</p>
+          <h3 class="apt-card-title">Monolocale arredato vista lago</h3>
+          <div class="apt-features">
+            <span><i class="fas fa-expand-arrows-alt" aria-hidden="true"></i> 38 m²</span>
+            <span><i class="fas fa-bed" aria-hidden="true"></i> Studio</span>
+            <span><i class="fas fa-water" aria-hidden="true"></i> Vista lago</span>
+          </div>
+          <div class="apt-card-footer">
+            <div>
+              <div class="apt-price-label">Affitto mensile</div>
+              <div class="apt-price-amount">CHF 1'100 <span class="apt-price-period">/ mese</span></div>
+            </div>
+            <a href="#contatti" class="btn btn-primary-dk" style="padding:.5rem 1rem;font-size:.82rem;">Dettagli</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="apt-card" data-type="arredato">
+        <div class="apt-card-img apt-card-img-4">
+          <i class="fas fa-chair" aria-hidden="true"></i>
+          <span class="apt-tag">Arredato</span>
+          <button class="apt-wishlist" aria-label="Aggiungi ai preferiti"><i class="far fa-heart"></i></button>
+        </div>
+        <div class="apt-card-body">
+          <p class="apt-location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Lugano, Paradiso</p>
+          <h3 class="apt-card-title">Appartamento 2.5 locali arredato</h3>
+          <div class="apt-features">
+            <span><i class="fas fa-expand-arrows-alt" aria-hidden="true"></i> 58 m²</span>
+            <span><i class="fas fa-bed" aria-hidden="true"></i> 1 camera</span>
+            <span><i class="fas fa-couch" aria-hidden="true"></i> Arredato</span>
+          </div>
+          <div class="apt-card-footer">
+            <div>
+              <div class="apt-price-label">Affitto mensile</div>
+              <div class="apt-price-amount">CHF 1'550 <span class="apt-price-period">/ mese</span></div>
+            </div>
+            <a href="#contatti" class="btn btn-primary-dk" style="padding:.5rem 1rem;font-size:.82rem;">Dettagli</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 5 -->
+      <article class="apt-card" data-type="2-3-locali">
+        <div class="apt-card-img apt-card-img-5">
+          <i class="fas fa-building" aria-hidden="true"></i>
+          <span class="apt-tag">Disponibile</span>
+          <button class="apt-wishlist" aria-label="Aggiungi ai preferiti"><i class="far fa-heart"></i></button>
+        </div>
+        <div class="apt-card-body">
+          <p class="apt-location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Mendrisio, Corso Lugano</p>
+          <h3 class="apt-card-title">Appartamento 3.5 locali ristrutturato</h3>
+          <div class="apt-features">
+            <span><i class="fas fa-expand-arrows-alt" aria-hidden="true"></i> 78 m²</span>
+            <span><i class="fas fa-bed" aria-hidden="true"></i> 2 camere</span>
+            <span><i class="fas fa-parking" aria-hidden="true"></i> Garage</span>
+          </div>
+          <div class="apt-card-footer">
+            <div>
+              <div class="apt-price-label">Affitto mensile</div>
+              <div class="apt-price-amount">CHF 1'680 <span class="apt-price-period">/ mese</span></div>
+            </div>
+            <a href="#contatti" class="btn btn-primary-dk" style="padding:.5rem 1rem;font-size:.82rem;">Dettagli</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 6 -->
+      <article class="apt-card" data-type="4-locali">
+        <div class="apt-card-img apt-card-img-6">
+          <i class="fas fa-home" aria-hidden="true"></i>
+          <span class="apt-tag new">Nuovo</span>
+          <button class="apt-wishlist" aria-label="Aggiungi ai preferiti"><i class="far fa-heart"></i></button>
+        </div>
+        <div class="apt-card-body">
+          <p class="apt-location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Lugano, Massagno</p>
+          <h3 class="apt-card-title">Attico 5.5 locali con vista panoramica</h3>
+          <div class="apt-features">
+            <span><i class="fas fa-expand-arrows-alt" aria-hidden="true"></i> 145 m²</span>
+            <span><i class="fas fa-bed" aria-hidden="true"></i> 4 camere</span>
+            <span><i class="fas fa-mountain" aria-hidden="true"></i> Vista panoramica</span>
+          </div>
+          <div class="apt-card-footer">
+            <div>
+              <div class="apt-price-label">Affitto mensile</div>
+              <div class="apt-price-amount">CHF 3'400 <span class="apt-price-period">/ mese</span></div>
+            </div>
+            <a href="#contatti" class="btn btn-primary-dk" style="padding:.5rem 1rem;font-size:.82rem;">Dettagli</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     TENANT AREA
+══════════════════════════════════════════ -->
+<section class="tenant-section" id="area-inquilini" aria-labelledby="tenant-title">
+  <div class="container">
+    <div class="tenant-inner">
+
+      <!-- Left: features -->
+      <div class="tenant-text">
+        <span class="badge" style="background:rgba(255,255,255,.2);color:#fff;">Area Riservata</span>
+        <h2 class="section-title" id="tenant-title">Tutto a portata di clic,<br />solo per te</h2>
+        <p class="section-sub">Accedi all'area riservata per gestire il tuo contratto, segnalare guasti e molto altro.</p>
+
+        <div class="tenant-features">
+
+          <div class="tenant-feature">
+            <div class="tf-icon"><i class="fas fa-tools" aria-hidden="true"></i></div>
+            <div class="tf-text">
+              <h4>Segnalazione Guasti</h4>
+              <p>Invia una segnalazione di guasto con foto e descrizione. Traccia lo stato dell'intervento in tempo reale.</p>
+            </div>
+          </div>
+
+          <div class="tenant-feature">
+            <div class="tf-icon"><i class="fas fa-file-alt" aria-hidden="true"></i></div>
+            <div class="tf-text">
+              <h4>Documenti &amp; Contratto</h4>
+              <p>Visualizza e scarica il tuo contratto d'affitto, le ricevute di pagamento e i verbali di consegna.</p>
+            </div>
+          </div>
+
+          <div class="tenant-feature">
+            <div class="tf-icon"><i class="fas fa-user-friends" aria-hidden="true"></i></div>
+            <div class="tf-text">
+              <h4>Ricerca Subentrante</h4>
+              <p>Pubblica la tua richiesta di subentrante e accedi alle candidature ricevute direttamente online.</p>
+            </div>
+          </div>
+
+          <div class="tenant-feature">
+            <div class="tf-icon"><i class="fas fa-sign-out-alt" aria-hidden="true"></i></div>
+            <div class="tf-text">
+              <h4>Disdetta Contratto</h4>
+              <p>Invia la disdetta del contratto in pochi passi, con la modulistica corretta e le scadenze legali.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Right: login card -->
+      <div>
+        <div class="area-card" role="complementary" aria-label="Accesso area riservata">
+          <h3><i class="fas fa-lock" aria-hidden="true"></i> Accedi all'Area Riservata</h3>
+          <form class="area-form" id="login-form" novalidate>
+            <div class="form-group">
+              <label for="login-email">Email / Codice inquilino</label>
+              <input type="email" id="login-email" name="email" placeholder="nome@esempio.ch" autocomplete="email" required />
+            </div>
+            <div class="form-group">
+              <label for="login-pw">Password</label>
+              <input type="password" id="login-pw" name="password" placeholder="••••••••" autocomplete="current-password" required />
+            </div>
+            <p class="forgot-link"><a href="#contatti">Password dimenticata?</a></p>
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
+              <i class="fas fa-sign-in-alt"></i> Accedi
+            </button>
+            <div class="divider">oppure</div>
+            <p class="register-link">Non hai ancora un account? <a href="#contatti">Registrati</a></p>
+          </form>
+        </div>
+
+        <!-- Info for new tenants -->
+        <div style="margin-top:1.2rem;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:var(--radius);padding:1.2rem 1.4rem;color:#fff;">
+          <h4 style="font-size:.9rem;margin-bottom:.5rem;display:flex;align-items:center;gap:.4rem;">
+            <i class="fas fa-info-circle" style="color:var(--accent-lt);" aria-hidden="true"></i> Sei un nuovo inquilino?
+          </h4>
+          <p style="font-size:.82rem;opacity:.8;margin-bottom:.75rem;">
+            Le credenziali di accesso ti vengono fornite alla firma del contratto.<br />
+            Per assistenza contatta il nostro ufficio.
+          </p>
+          <a href="#contatti" class="btn btn-outline" style="font-size:.82rem;padding:.5rem 1.1rem;">
+            <i class="fas fa-phone"></i> Contattaci
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     HOW IT WORKS
+══════════════════════════════════════════ -->
+<section class="steps-section" id="chi-siamo" aria-labelledby="steps-title">
+  <div class="container">
+    <div class="section-header" style="text-align:center;">
+      <span class="badge">Come Funziona</span>
+      <h2 class="section-title" id="steps-title">Trovare casa con noi è semplice</h2>
+      <p class="section-sub" style="margin:0 auto 3rem;">Quattro semplici passi per la tua nuova casa in Ticino.</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step-item">
+        <div class="step-num" aria-hidden="true">1</div>
+        <h4>Sfoglia gli annunci</h4>
+        <p>Cerca tra i nostri appartamenti disponibili usando i filtri per posizione, dimensione e prezzo.</p>
+      </div>
+      <div class="step-item">
+        <div class="step-num" aria-hidden="true">2</div>
+        <h4>Richiedi una visita</h4>
+        <p>Contattaci per fissare una visita all'appartamento che ti interessa, in orari comodi per te.</p>
+      </div>
+      <div class="step-item">
+        <div class="step-num" aria-hidden="true">3</div>
+        <h4>Invia la domanda</h4>
+        <p>Compila la domanda di locazione online con i documenti richiesti. Processo chiaro e veloce.</p>
+      </div>
+      <div class="step-item">
+        <div class="step-num" aria-hidden="true">4</div>
+        <h4>Benvenuto a casa!</h4>
+        <p>Firma il contratto, ricevi le chiavi e accedi alla tua area riservata per gestire tutto online.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     TESTIMONIALS
+══════════════════════════════════════════ -->
+<section class="testimonials-section" aria-labelledby="testi-title">
+  <div class="container">
+    <div class="section-header" style="text-align:center;">
+      <span class="badge">Cosa Dicono di Noi</span>
+      <h2 class="section-title" id="testi-title">I nostri inquilini ci raccontano</h2>
+      <p class="section-sub" style="margin:0 auto 3rem;">La soddisfazione dei nostri inquilini è la nostra priorità.</p>
+    </div>
+    <div class="testimonials-grid">
+
+      <blockquote class="testimonial-card">
+        <div class="testimonial-stars" aria-label="5 stelle su 5">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p>"Ho trovato il mio appartamento in meno di due settimane. Il team di Lamiacasa è stato professionale, disponibile e ha risposto a ogni mia domanda con chiarezza."</p>
+        <footer class="testimonial-author">
+          <div class="author-avatar avatar-1" aria-hidden="true">MA</div>
+          <div class="author-info">
+            <strong>Marco A.</strong>
+            <span>Inquilino – Lugano</span>
+          </div>
+        </footer>
+      </blockquote>
+
+      <blockquote class="testimonial-card">
+        <div class="testimonial-stars" aria-label="5 stelle su 5">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p>"Segnalare un guasto online è facilissimo. In meno di 24 ore è arrivato il tecnico. Finalmente una gestione immobiliare moderna e all'altezza."</p>
+        <footer class="testimonial-author">
+          <div class="author-avatar avatar-2" aria-hidden="true">SF</div>
+          <div class="author-info">
+            <strong>Sofia F.</strong>
+            <span>Inquilina – Bellinzona</span>
+          </div>
+        </footer>
+      </blockquote>
+
+      <blockquote class="testimonial-card">
+        <div class="testimonial-stars" aria-label="5 stelle su 5">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p>"Grazie a Lamiacasa ho trovato un subentrante in tempi record quando ho dovuto trasferirmi per lavoro. Consigliatissimi!"</p>
+        <footer class="testimonial-author">
+          <div class="author-avatar avatar-3" aria-hidden="true">LR</div>
+          <div class="author-info">
+            <strong>Luca R.</strong>
+            <span>Ex inquilino – Locarno</span>
+          </div>
+        </footer>
+      </blockquote>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     CTA BANNER
+══════════════════════════════════════════ -->
+<section class="cta-section" aria-label="Chiamata all'azione">
+  <div class="container">
+    <div class="cta-inner">
+      <div>
+        <h2>Stai cercando il tuo prossimo appartamento in Ticino?</h2>
+        <p>Contattaci oggi e trova la soluzione perfetta per te.</p>
+      </div>
+      <a href="#contatti" class="btn btn-white">
+        <i class="fas fa-envelope"></i> Scrivici ora
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     CONTACT
+══════════════════════════════════════════ -->
+<section class="contact-section" id="contatti" aria-labelledby="contact-title">
+  <div class="container">
+    <div class="section-header">
+      <span class="badge">Contatti</span>
+      <h2 class="section-title" id="contact-title">Siamo qui per aiutarti</h2>
+      <p class="section-sub">Scrivici o chiamaci – risponderemo al più presto.</p>
+    </div>
+
+    <div class="contact-grid">
+
+      <!-- Info -->
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></div>
+          <div>
+            <h4>Indirizzo</h4>
+            <p>Via [Da Inserire], [CAP] [Comune]<br />Ticino, Svizzera</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fas fa-phone" aria-hidden="true"></i></div>
+          <div>
+            <h4>Telefono</h4>
+            <a href="tel:+41XXXXXXXXX">+41 XX XXX XX XX</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+          <div>
+            <h4>Email</h4>
+            <a href="mailto:info@lamiacasa.ch">info@lamiacasa.ch</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fas fa-clock" aria-hidden="true"></i></div>
+          <div>
+            <h4>Orari di apertura</h4>
+            <p>Lunedì – Venerdì: 08:30–12:00 / 13:30–17:30<br />Sabato – Domenica: Chiuso</p>
+          </div>
+        </div>
+
+        <!-- Social links -->
+        <div style="display:flex;gap:.75rem;margin-top:.5rem;">
+          <a href="https://www.facebook.com/lamiacasa.ch" target="_blank" rel="noopener" class="social-link" style="background:rgba(26,107,138,.1);color:var(--primary);" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="social-link" style="background:rgba(26,107,138,.1);color:var(--primary);" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Contact form -->
+      <form class="contact-form" id="contact-form" novalidate>
+        <div class="form-row">
+          <div class="cf-group">
+            <label for="cf-name">Nome e cognome *</label>
+            <input type="text" id="cf-name" name="name" placeholder="Mario Rossi" required />
+          </div>
+          <div class="cf-group">
+            <label for="cf-email">Email *</label>
+            <input type="email" id="cf-email" name="email" placeholder="mario@esempio.ch" required />
+          </div>
+        </div>
+        <div class="cf-group">
+          <label for="cf-subject">Oggetto</label>
+          <select id="cf-subject" name="subject">
+            <option value="">Seleziona un argomento</option>
+            <option>Informazioni appartamento</option>
+            <option>Segnalazione guasto</option>
+            <option>Ricerca subentrante</option>
+            <option>Disdetta contratto</option>
+            <option>Domanda di locazione</option>
+            <option>Gestione immobiliare (proprietari)</option>
+            <option>Altro</option>
+          </select>
+        </div>
+        <div class="cf-group">
+          <label for="cf-message">Messaggio *</label>
+          <textarea id="cf-message" name="message" placeholder="Scrivi qui il tuo messaggio…" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary-dk" style="align-self:flex-start;">
+          <i class="fas fa-paper-plane"></i> Invia messaggio
+        </button>
+      </form>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     MAP
+══════════════════════════════════════════ -->
+<div class="map-section" aria-label="Mappa della sede">
+  <div class="map-placeholder">
+    <i class="fas fa-map-marked-alt" aria-hidden="true"></i>
+    <p>Mappa—inserire il codice embed di Google Maps qui</p>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════ -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+
+      <!-- Brand -->
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <div class="logo-icon" style="width:36px;height:36px;font-size:1rem;" aria-hidden="true">
+            <i class="fas fa-home"></i>
+          </div>
+          Lamia<span>casa</span>.ch
+        </div>
+        <p>Gestione immobiliare professionale in Ticino. Dalla ricerca della casa alla gestione quotidiana, siamo sempre al tuo fianco.</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/lamiacasa.ch" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="mailto:info@lamiacasa.ch" class="social-link" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Inquilini -->
+      <div class="footer-col">
+        <h4>Area Inquilini</h4>
+        <ul>
+          <li><a href="#area-inquilini"><i class="fas fa-chevron-right" aria-hidden="true"></i> Accedi all'area riservata</a></li>
+          <li><a href="#area-inquilini"><i class="fas fa-chevron-right" aria-hidden="true"></i> Segnala un guasto</a></li>
+          <li><a href="#area-inquilini"><i class="fas fa-chevron-right" aria-hidden="true"></i> Disdetta contratto</a></li>
+          <li><a href="#area-inquilini"><i class="fas fa-chevron-right" aria-hidden="true"></i> Ricerca subentrante</a></li>
+          <li><a href="#area-inquilini"><i class="fas fa-chevron-right" aria-hidden="true"></i> I miei documenti</a></li>
+        </ul>
+      </div>
+
+      <!-- Appartamenti -->
+      <div class="footer-col">
+        <h4>Appartamenti</h4>
+        <ul>
+          <li><a href="#appartamenti"><i class="fas fa-chevron-right" aria-hidden="true"></i> Tutti gli annunci</a></li>
+          <li><a href="#appartamenti"><i class="fas fa-chevron-right" aria-hidden="true"></i> Lugano</a></li>
+          <li><a href="#appartamenti"><i class="fas fa-chevron-right" aria-hidden="true"></i> Bellinzona</a></li>
+          <li><a href="#appartamenti"><i class="fas fa-chevron-right" aria-hidden="true"></i> Locarno</a></li>
+          <li><a href="#appartamenti"><i class="fas fa-chevron-right" aria-hidden="true"></i> Mendrisio</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="footer-newsletter">
+        <h4>Newsletter</h4>
+        <p>Ricevi in anteprima i nuovi appartamenti disponibili.</p>
+        <form class="newsletter-form" onsubmit="event.preventDefault();this.querySelector('input').value='';alert('Grazie per l\'iscrizione!');">
+          <input type="email" placeholder="La tua email" aria-label="Email per la newsletter" required />
+          <button type="submit" class="btn btn-primary" aria-label="Iscriviti">
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Lamiacasa.ch – Tutti i diritti riservati</p>
+      <nav class="footer-bottom-links" aria-label="Link legali">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Cookie Policy</a>
+        <a href="#">Condizioni d'uso</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<!-- ══════════════════════════════════════════
+     COOKIE BANNER
+══════════════════════════════════════════ -->
+<div class="cookie-banner" role="dialog" aria-live="polite" aria-label="Banner cookie">
+  <p>
+    🍪 Utilizziamo i cookie per migliorare la tua esperienza di navigazione.
+    <a href="#">Scopri di più</a>
+  </p>
+  <div class="cookie-actions">
+    <button id="cookie-decline" class="btn btn-outline btn-sm" style="color:rgba(255,255,255,.7);border-color:rgba(255,255,255,.3);">Rifiuta</button>
+    <button id="cookie-accept" class="btn btn-primary btn-sm">Accetta</button>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     SCROLL TO TOP
+══════════════════════════════════════════ -->
+<button class="scroll-top" aria-label="Torna in cima">
+  <i class="fas fa-chevron-up" aria-hidden="true"></i>
+</button>
+
+<!-- ── Scripts ── -->
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
