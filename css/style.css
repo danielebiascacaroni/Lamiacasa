@@ -296,6 +296,8 @@ ul { list-style: none; }
 }
 .apt-thumb-1 { background: linear-gradient(135deg, #3a9dc0 0%, #1a6b8a 100%); }
 .apt-thumb-2 { background: linear-gradient(135deg, #1a6b8a 0%, #124d66 100%); }
+.apt-thumb-3 { background: linear-gradient(135deg, #2d6a4f 0%, #1b4332 100%); }
+a.apt-card-hero { display: block; text-decoration: none; cursor: pointer; }
 .apt-thumb i {
   font-size: 3.5rem;
   color: rgba(255,255,255,.25);
