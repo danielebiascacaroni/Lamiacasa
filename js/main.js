@@ -67,12 +67,12 @@ document.addEventListener('DOMContentLoaded', () => {
     pill.addEventListener('click', () => {
       document.querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
       pill.classList.add('active');
-      const filterType = pill.dataset.filter;
+      const filterCity = pill.dataset.filter;
       document.querySelectorAll('.apt-card').forEach(card => {
-        if (!filterType || filterType === 'tutti') {
+        if (!filterCity || filterCity === 'tutti') {
           card.style.display = '';
         } else {
-          card.style.display = card.dataset.type === filterType ? '' : 'none';
+          card.style.display = card.dataset.city === filterCity ? '' : 'none';
         }
       });
     });

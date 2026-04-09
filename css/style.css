@@ -489,6 +489,11 @@ ul { list-style: none; }
 .apt-card-img-4 { background: linear-gradient(135deg, #7860d8 0%, #5040a8 100%); }
 .apt-card-img-5 { background: linear-gradient(135deg, #50b8c8 0%, #2888a8 100%); }
 .apt-card-img-6 { background: linear-gradient(135deg, #e8604a 0%, #b83020 100%); }
+.apt-card-img-7 { background: linear-gradient(135deg, #5aa86e 0%, #357a46 100%); }
+.apt-card-img-8 { background: linear-gradient(135deg, #a860c8 0%, #7838a0 100%); }
+.apt-card-img-9 { background: linear-gradient(135deg, #c8a830 0%, #a07818 100%); }
+.apt-tag.parking { background: #e8a020; }
+.apt-tag.coming-soon { background: #8a9aaa; }
 .apt-tag {
   position: absolute; top: .8rem; left: .8rem;
   background: var(--accent);
