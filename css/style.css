@@ -652,6 +652,49 @@ a.apt-card-hero { display: block; text-decoration: none; cursor: pointer; }
 }
 .register-link a { color: var(--accent-lt); font-weight: 600; }
 
+/* ── Informazioni Utili (PDF docs) ── */
+.docs-section { padding: 5rem 0; background: var(--white); }
+.docs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+.doc-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--light);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.6rem;
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition);
+  gap: .8rem;
+}
+.doc-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary);
+}
+.doc-card-icon {
+  width: 3rem; height: 3rem;
+  border-radius: .6rem;
+  background: rgba(220, 38, 38, .1);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.4rem;
+  color: #dc2626;
+  flex-shrink: 0;
+}
+.doc-card-title { font-size: 1rem; font-weight: 700; margin-bottom: .25rem; }
+.doc-card-desc  { font-size: .85rem; color: var(--grey); line-height: 1.5; margin: 0; }
+.doc-card-dl {
+  margin-top: auto;
+  font-size: .8rem;
+  font-weight: 600;
+  color: var(--primary);
+  display: inline-flex; align-items: center; gap: .35rem;
+}
+
 /* ── Steps ── */
 .steps-section { padding: 5rem 0; background: var(--light); }
 .steps-grid {
