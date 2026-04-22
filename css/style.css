@@ -497,6 +497,29 @@ a.apt-card-hero { display: block; text-decoration: none; cursor: pointer; }
   object-fit: cover;
   position: absolute; inset: 0;
 }
+.apt-ribbon-rented {
+  position: absolute;
+  top: 22px;
+  left: -54px;
+  width: 220px;
+  padding: .45rem 0;
+  background: #c62828;
+  color: var(--white);
+  font-size: .82rem;
+  font-weight: 800;
+  letter-spacing: .14em;
+  text-align: center;
+  text-transform: uppercase;
+  transform: rotate(-28deg);
+  box-shadow: 0 8px 18px rgba(0,0,0,.24);
+  z-index: 2;
+  pointer-events: none;
+}
+.apt-thumb .apt-ribbon-rented {
+  top: 18px;
+  left: -58px;
+  z-index: 3;
+}
 .apt-card-img-1 { background: linear-gradient(135deg, #3a9dc0 0%, #1a6b8a 100%); }
 .apt-card-img-2 { background: linear-gradient(135deg, #45a877 0%, #2a7a50 100%); }
 .apt-card-img-3 { background: linear-gradient(135deg, #e8904a 0%, #c8601a 100%); }
