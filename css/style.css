@@ -195,7 +195,7 @@ ul { list-style: none; }
   display: flex;
   align-items: center;
   overflow: hidden;
-  background: linear-gradient(135deg, var(--primary-dk) 0%, var(--primary) 50%, #2a8cad 100%);
+  background: linear-gradient(rgba(18,77,102,.65), rgba(18,77,102,.65)), url('../img/Locarno.jpg') center center / cover no-repeat;
 }
 .hero-bg {
   position: absolute; inset: 0;
