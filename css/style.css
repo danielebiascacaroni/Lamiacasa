@@ -840,6 +840,9 @@ a.apt-card-hero { display: block; text-decoration: none; cursor: pointer; }
   box-shadow: 0 0 0 3px rgba(26,107,138,.1);
 }
 .cf-group textarea { resize: vertical; min-height: 110px; }
+.cf-optional { font-size: .72rem; font-weight: 400; color: var(--grey); }
+.cf-error { background: rgba(220,60,60,.08); border: 1px solid rgba(220,60,60,.3); color: #c0392b; border-radius: 8px; padding: .6rem 1rem; font-size: .85rem; }
+#cf-locazione { display: none; }
 
 /* ── Map placeholder ── */
 .map-section { height: 350px; background: #e0e8ef; position: relative; overflow: hidden; }
