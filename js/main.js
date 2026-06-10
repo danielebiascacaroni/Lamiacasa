@@ -98,22 +98,92 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // ── Contact form ──
+  // ── Contact form → Telegram ──
   const contactForm = document.querySelector('#contact-form');
   if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+
+    // Mostra/nasconde i campi locazione in base all'oggetto selezionato
+    const subjectSel    = contactForm.querySelector('#cf-subject');
+    const locazioneDiv  = contactForm.querySelector('#cf-locazione');
+    subjectSel.addEventListener('change', () => {
+      const isLocazione = subjectSel.value === 'locazione';
+      locazioneDiv.style.display = isLocazione ? 'flex' : 'none';
+    });
+
+    contactForm.addEventListener('submit', async (e) => {
       e.preventDefault();
+      const errorDiv = contactForm.querySelector('#cf-error');
+      errorDiv.style.display = 'none';
+
+      const name     = contactForm.querySelector('#cf-name').value.trim();
+      const email    = contactForm.querySelector('#cf-email').value.trim();
+      const whatsapp = contactForm.querySelector('#cf-whatsapp').value.trim();
+      const subject  = subjectSel.value;
+      const message  = contactForm.querySelector('#cf-message').value.trim();
+      const isLocazione = subject === 'locazione';
+
+      // Validazione
+      const errors = [];
+      if (!name) errors.push('Il nome è obbligatorio.');
+      if (!email && !whatsapp) errors.push('Inserisci almeno un contatto: email o WhatsApp.');
+      if (isLocazione) {
+        if (!contactForm.querySelector('#cf-tipo').value)  errors.push('Seleziona il tipo di appartamento.');
+        if (!contactForm.querySelector('#cf-data').value)  errors.push('Inserisci la data di disponibilità.');
+        if (!contactForm.querySelector('#cf-zona').value)  errors.push('Seleziona la zona di preferenza.');
+      }
+      if (!message) errors.push('Il campo "Altre informazioni" è obbligatorio.');
+
+      if (errors.length) {
+        errorDiv.textContent = errors.join(' ');
+        errorDiv.style.display = 'block';
+        return;
+      }
+
+      // Costruzione messaggio Telegram
+      const fmt = d => { const [y,m,g] = d.split('-'); return `${g}.${m}.${y}`; };
+      let text;
+      if (isLocazione) {
+        const tipo = contactForm.querySelector('#cf-tipo').value;
+        const data = fmt(contactForm.querySelector('#cf-data').value);
+        const zona = contactForm.querySelector('#cf-zona').value;
+        text = `🏠 Richiesta locazione – lamiacasa.ch\n\n👤 ${name}` +
+               (email    ? `\n📧 ${email}`    : '') +
+               (whatsapp ? `\n📱 ${whatsapp}` : '') +
+               `\n\n🏠 Tipo: ${tipo}\n📅 Disponibile da: ${data}\n📍 Zona: ${zona}` +
+               `\n\n💬 Altre info:\n${message}`;
+      } else {
+        const oggetto = subject === 'altro' ? 'Altro argomento' : '(non specificato)';
+        text = `📬 Nuovo messaggio – lamiacasa.ch\n\n👤 ${name}` +
+               (email    ? `\n📧 ${email}`    : '') +
+               (whatsapp ? `\n📱 ${whatsapp}` : '') +
+               `\n📌 ${oggetto}\n\n💬 Messaggio:\n${message}`;
+      }
+
       const btn = contactForm.querySelector('button[type="submit"]');
-      const originalButtonText = btn.innerHTML;
-      btn.innerHTML = '<i class="fas fa-check"></i> Inviato!';
+      const originalHTML = btn.innerHTML;
       btn.disabled = true;
-      btn.style.background = '#2eaf64';
+      btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Invio in corso…';
+
+      try {
+        const res = await fetch('https://api.telegram.org/bot8759827611:AAF4aPxxFEv-xXMSgBchmqXNBDmOKy-RlFs/sendMessage', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ chat_id: 8754468854, text })
+        });
+        if (!res.ok) throw new Error();
+        btn.innerHTML = '<i class="fas fa-check"></i> Messaggio inviato!';
+        btn.style.background = '#2eaf64';
+        contactForm.reset();
+        locazioneDiv.style.display = 'none';
+      } catch {
+        btn.innerHTML = '<i class="fas fa-times"></i> Errore, riprova';
+        btn.style.background = '#dc3c3c';
+      }
       setTimeout(() => {
-        btn.innerHTML = originalButtonText;
+        btn.innerHTML = originalHTML;
         btn.disabled = false;
         btn.style.background = '';
-        contactForm.reset();
-      }, 3000);
+      }, 4000);
     });
   }
 
