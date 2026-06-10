@@ -769,32 +769,71 @@
 
  <!-- Contact form -->
  <form class="contact-form" id="contact-form" novalidate>
+
  <div class="form-row">
  <div class="cf-group">
  <label for="cf-name">Nome e cognome *</label>
  <input type="text" id="cf-name" name="name" placeholder="Mario Rossi" required />
  </div>
  <div class="cf-group">
- <label for="cf-email">Email *</label>
- <input type="email" id="cf-email" name="email" placeholder="mario@esempio.ch" required />
+ <label for="cf-email">Email <span class="cf-optional">(obbligatoria se non inserisci WhatsApp)</span></label>
+ <input type="email" id="cf-email" name="email" placeholder="mario@esempio.ch" autocomplete="email" />
  </div>
  </div>
+
+ <div class="cf-group">
+ <label for="cf-whatsapp">WhatsApp <span class="cf-optional">(obbligatorio se non inserisci l'email)</span></label>
+ <input type="tel" id="cf-whatsapp" name="whatsapp" placeholder="+41 79 000 00 00" autocomplete="tel" />
+ </div>
+
  <div class="cf-group">
  <label for="cf-subject">Oggetto</label>
  <select id="cf-subject" name="subject">
  <option value="">Seleziona un argomento</option>
- <option>Informazioni appartamento</option>
- <option>Segnalazione guasto</option>
- <option>Ricerca subentrante</option>
- <option>Disdetta contratto</option>
- <option>Domanda di locazione</option>
+ <option value="locazione">Sono interessato alla locazione di un appartamento</option>
+ <option value="altro">Altro argomento (specificare nel messaggio)</option>
+ </select>
+ </div>
+
+ <!-- Campi visibili solo per "locazione" -->
+ <div id="cf-locazione" style="display:none;flex-direction:column;gap:1rem;">
+ <div class="form-row">
+ <div class="cf-group">
+ <label for="cf-tipo">Tipo di appartamento *</label>
+ <select id="cf-tipo" name="tipo">
+ <option value="">Seleziona</option>
+ <option>Monolocale</option>
+ <option>2.5 locali</option>
+ <option>3.5 locali</option>
+ <option>4.5 locali</option>
  <option>Altro</option>
  </select>
  </div>
  <div class="cf-group">
- <label for="cf-message">Messaggio *</label>
- <textarea id="cf-message" name="message" placeholder="Scrivi qui il tuo messaggio…" required></textarea>
+ <label for="cf-data">A partire da quando *</label>
+ <input type="date" id="cf-data" name="data" />
  </div>
+ </div>
+ <div class="cf-group">
+ <label for="cf-zona">Zona di preferenza *</label>
+ <select id="cf-zona" name="zona">
+ <option value="">Seleziona una zona</option>
+ <option>Ascona</option>
+ <option>Losone</option>
+ <option>Locarno</option>
+ <option>Giubiasco</option>
+ <option>Locarnese (zona generale)</option>
+ </select>
+ </div>
+ </div>
+
+ <div class="cf-group">
+ <label for="cf-message">Altre informazioni *</label>
+ <textarea id="cf-message" name="message" placeholder="Scrivi qui il tuo messaggio o eventuali richieste particolari…" required></textarea>
+ </div>
+
+ <div id="cf-error" class="cf-error" style="display:none;"></div>
+
  <button type="submit" class="btn btn-primary-dk" style="align-self:flex-start;">
  <i class="fas fa-paper-plane"></i> Invia messaggio
  </button>
